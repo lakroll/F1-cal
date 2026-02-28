@@ -23,7 +23,7 @@
     li { margin-bottom: 0.4rem; }
     a { color: #e10600; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .lang-toggle { display: flex; gap: 1rem; margin-bottom: 2rem; }
+    .lang-toggle { display: flex; gap: 0.75rem; margin-bottom: 2rem; flex-wrap: wrap; }
     .lang-btn {
       background: #1a1a1a; border: 1px solid #333; color: #aaa;
       padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem;
@@ -43,8 +43,10 @@
   </header>
 
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="switchLang('en')">English</button>
-    <button class="lang-btn" onclick="switchLang('fr')">Français</button>
+    <button class="lang-btn active" onclick="switchLang(this,'en')">English</button>
+    <button class="lang-btn" onclick="switchLang(this,'fr')">Français</button>
+    <button class="lang-btn" onclick="switchLang(this,'it')">Italiano</button>
+    <button class="lang-btn" onclick="switchLang(this,'es')">Español</button>
   </div>
 
   <!-- ENGLISH -->
@@ -112,7 +114,7 @@
     <h2>9. Contact</h2>
     <p>
       If you have any questions about this privacy policy, please contact:
-      <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+      <a href="mailto:lakroll.corp@gmail.com">lakroll.corp@gmail.com</a>
     </p>
 
   </div>
@@ -183,7 +185,147 @@
     <h2>9. Contact</h2>
     <p>
       Pour toute question relative à cette politique de confidentialité :
-      <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+      <a href="mailto:lakroll.corp@gmail.com">lakroll.corp@gmail.com</a>
+    </p>
+
+  </div>
+
+  <!-- ITALIANO -->
+  <div id="lang-it" class="lang-section">
+
+    <h2>1. Panoramica</h2>
+    <p>
+      F1 Calendar è un'applicazione con il calendario delle gare di Formula 1, disponibile sull'App Store e su Google Play.
+      Questa informativa spiega come l'app gestisce le informazioni.
+    </p>
+
+    <h2>2. Dati che NON raccogliamo</h2>
+    <p>L'app <strong>non</strong> raccoglie, memorizza, trasmette né condivide dati personali. In particolare:</p>
+    <ul>
+      <li>Nessun account utente né registrazione</li>
+      <li>Nessun nome, indirizzo e-mail o informazione di contatto</li>
+      <li>Nessun dato di localizzazione</li>
+      <li>Nessun identificatore di dispositivo o pubblicitario</li>
+      <li>Nessuna analisi o tracciamento dell'utilizzo</li>
+      <li>Nessun servizio di segnalazione degli arresti anomali</li>
+      <li>Nessun SDK pubblicitario di terze parti</li>
+    </ul>
+
+    <h2>3. Autorizzazione Calendario</h2>
+    <p>
+      L'app richiede l'accesso al calendario del dispositivo esclusivamente per aggiungere eventi delle sessioni
+      di Formula 1 (prove libere, qualifiche, gara) quando si preme esplicitamente "Aggiungi al calendario".
+      L'app scrive eventi nel calendario locale e non legge, copia né trasmette dati del calendario esistente.
+    </p>
+
+    <h2>4. Autorizzazione Notifiche</h2>
+    <p>
+      L'app può richiedere l'autorizzazione per inviare notifiche locali come promemoria per le sessioni imminenti.
+      Queste notifiche vengono generate interamente sul dispositivo e non transitano attraverso alcun server esterno.
+    </p>
+
+    <h2>5. Fonti di dati esterne</h2>
+    <p>
+      I dati del calendario delle gare provengono da <a href="https://api.jolpi.ca" target="_blank">Jolpica</a>
+      (api.jolpi.ca), un mirror open-source della precedente API Ergast Motor Racing.
+      I dati delle classifiche piloti e costruttori provengono da <a href="https://openf1.org" target="_blank">OpenF1</a>
+      (api.openf1.org), un'API Formula 1 gratuita e open-source.
+      Nessun dato personale viene inviato a questi servizi.
+    </p>
+
+    <h2>6. Archiviazione locale</h2>
+    <p>
+      L'app memorizza la preferenza di lingua localmente sul dispositivo tramite AsyncStorage.
+      Questi dati non lasciano mai il dispositivo e non sono accessibili allo sviluppatore.
+    </p>
+
+    <h2>7. Privacy dei minori</h2>
+    <p>
+      L'app non raccoglie consapevolmente informazioni su bambini di età inferiore ai 13 anni.
+      Poiché non viene raccolta alcuna informazione personale, l'app è adatta a tutte le età.
+    </p>
+
+    <h2>8. Modifiche alla presente informativa</h2>
+    <p>
+      In caso di modifiche, la versione aggiornata sarà pubblicata a questo URL con una nuova data.
+      L'uso continuato dell'app dopo le modifiche costituisce accettazione della nuova informativa.
+    </p>
+
+    <h2>9. Contatto</h2>
+    <p>
+      Per qualsiasi domanda relativa a questa informativa sulla privacy:
+      <a href="mailto:lakroll.corp@gmail.com">lakroll.corp@gmail.com</a>
+    </p>
+
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div id="lang-es" class="lang-section">
+
+    <h2>1. Descripción general</h2>
+    <p>
+      F1 Calendar es una aplicación de calendario de carreras de Fórmula 1, disponible en el App Store y Google Play.
+      Esta política explica cómo la aplicación gestiona la información.
+    </p>
+
+    <h2>2. Datos que NO recopilamos</h2>
+    <p>La aplicación <strong>no</strong> recopila, almacena, transmite ni comparte datos personales. En concreto:</p>
+    <ul>
+      <li>Sin cuentas de usuario ni registro</li>
+      <li>Sin nombres, direcciones de correo electrónico ni información de contacto</li>
+      <li>Sin datos de localización</li>
+      <li>Sin identificadores de dispositivo ni publicitarios</li>
+      <li>Sin análisis ni seguimiento del uso</li>
+      <li>Sin servicios de informes de fallos</li>
+      <li>Sin SDKs publicitarios de terceros</li>
+    </ul>
+
+    <h2>3. Permiso de Calendario</h2>
+    <p>
+      La aplicación solicita acceso al calendario del dispositivo únicamente para añadir eventos de sesiones
+      de Fórmula 1 (entrenamientos, clasificación, carrera) cuando el usuario pulsa explícitamente
+      "Añadir al calendario". La app escribe eventos en el calendario local y no lee, copia ni transmite
+      ningún dato del calendario existente.
+    </p>
+
+    <h2>4. Permiso de Notificaciones</h2>
+    <p>
+      La aplicación puede solicitar permiso para enviar notificaciones locales como recordatorios de
+      sesiones próximas. Estas notificaciones se generan íntegramente en el dispositivo y no pasan
+      por ningún servidor externo.
+    </p>
+
+    <h2>5. Fuentes de datos externas</h2>
+    <p>
+      Los datos del calendario de carreras se obtienen de <a href="https://api.jolpi.ca" target="_blank">Jolpica</a>
+      (api.jolpi.ca), un espejo open-source de la antigua API Ergast Motor Racing.
+      Los datos de clasificaciones de pilotos y constructores provienen de <a href="https://openf1.org" target="_blank">OpenF1</a>
+      (api.openf1.org), una API de Fórmula 1 gratuita y open-source.
+      No se envían datos personales a estos servicios.
+    </p>
+
+    <h2>6. Almacenamiento local</h2>
+    <p>
+      La aplicación almacena la preferencia de idioma localmente en el dispositivo mediante AsyncStorage.
+      Estos datos nunca salen del dispositivo y no son accesibles para el desarrollador.
+    </p>
+
+    <h2>7. Privacidad de los menores</h2>
+    <p>
+      La aplicación no recopila conscientemente información de menores de 13 años.
+      Como no se recopila ningún dato personal, la aplicación es apta para todas las edades.
+    </p>
+
+    <h2>8. Cambios en esta política</h2>
+    <p>
+      Si esta política de privacidad cambia, la versión actualizada se publicará en esta URL con una nueva fecha.
+      El uso continuado de la aplicación tras los cambios implica la aceptación de la nueva política.
+    </p>
+
+    <h2>9. Contacto</h2>
+    <p>
+      Para cualquier pregunta sobre esta política de privacidad:
+      <a href="mailto:lakroll.corp@gmail.com">lakroll.corp@gmail.com</a>
     </p>
 
   </div>
@@ -195,11 +337,11 @@
 </div>
 
 <script>
-  function switchLang(lang) {
+  function switchLang(btn, lang) {
     document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('visible'));
     document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
     document.getElementById('lang-' + lang).classList.add('visible');
-    event.target.classList.add('active');
+    btn.classList.add('active');
   }
 </script>
 </body>
